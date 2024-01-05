@@ -1,3 +1,5 @@
+@import "./../../assets/styles/_variables.scss";
+
 .container {
     display: flex;
     width: 100%;
@@ -7,10 +9,12 @@
 .right-content {
     display: flex;
     flex-direction: column;
-    width: calc(100% - 300px);
+    width: calc(100% - $sidebarWidth);
     height: 100%;
+    margin: 3px 8px;
 }
 
 .layout-main {
-    height: calc(100vh - 150px)
+    height: calc(100vh - $headerHeight - $footerHeight);
+    overflow-y: hidden;
 }

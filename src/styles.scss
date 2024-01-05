@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./assets/styles/variables";
+
 :root {
     --primary-color: #00a3ff;
     --primary-color-text: #ffffff;
@@ -6,19 +8,17 @@
 
 * {
     box-sizing: border-box;
-}
-
-html {
-    height: 100%;
-    font-size: 14px;
-}
-
-// start : configuration google-font Roboto
-body {
-    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    min-height: 100%;
+    overflow-x: hidden;
+}
+
+html, body {
+    height: 100vh;
+    min-height: 100vh;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    background-color: $defaultBackgroundColor;
 }
 
 h1,
@@ -31,11 +31,8 @@ h6 {
     font-family: 'Roboto', sans-serif;
 }
 
-// end : configuration google-font Roboto
-
 :host {
-    font-size: 14px;
-    box-sizing: border-box;
+    font-size: $scale;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }

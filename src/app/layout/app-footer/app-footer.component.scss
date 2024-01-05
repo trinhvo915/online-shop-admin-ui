@@ -1,5 +1,9 @@
+@import "./../../../assets/styles/_variables.scss";
+
 .layout-footer {
-    height: 50px;
-    background-color: aquamarine;
-    width: 100%;
+    height: $footerHeight;
+    border-radius: 7px;
+    background-color: $primaryColorText;
+    box-shadow: 60px 60px 60px $defaultBackgroundColor;
+    margin-top: 5px;
 }

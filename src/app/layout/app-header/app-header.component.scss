@@ -1,5 +1,9 @@
+
+@import "./../../../assets/styles/_variables.scss";
+
 .layout-header{
-    height: 100px;
-    background-color: bisque;
-    width: 100%;
+    height: $headerHeight;
+    background-color: $primaryColorText;
+    border-radius: 7px;
+    box-shadow: 60px 60px 60px $defaultBackgroundColor;
 }
