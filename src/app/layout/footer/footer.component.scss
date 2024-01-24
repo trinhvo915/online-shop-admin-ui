@@ -1,4 +1,6 @@
+@import './../../../styles.scss';
+
 .footer {
-    height: 90px;
+    height: $heightFooter;
     background-color: bisque;
 }

@@ -1,4 +1,6 @@
+@import './../../../styles.scss';
+
 .header {
-    height: 90px;
+    height: $heightHeader;
     background-color: bisque;
 }
