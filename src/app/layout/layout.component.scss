@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-layout {
+    height: 100%;
+    width: 250px;
+    background-color: aqua;
+}
+
+.right-layout {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: calc(100% - 250px);
+    background-color: aquamarine;
+}
+
+.content {
+    height: calc(100% - 180px);
+}
