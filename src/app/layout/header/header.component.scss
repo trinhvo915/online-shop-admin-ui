@@ -51,6 +51,12 @@
         .bell-icon {
             margin-right: 15px;
         }
+
+        @media only screen and (max-width: 768px) {
+            .bell-icon {
+                margin-right: 10px;
+            }
+        }
     }
 }
 
