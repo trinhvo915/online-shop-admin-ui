@@ -8,15 +8,15 @@
 .left-layout {
     height: 100%;
     width: $leftWith;
-    background-color: aqua;
+    background-color: #ffffff;
 }
 
 .right-layout {
+    flex: 1;
     height: 100%;
     display: flex;
     flex-direction: column;
-    width: calc(100% - $leftWith);
-    background-color: aquamarine;
+    margin: 0 15px;
 }
 
 .content {
@@ -29,6 +29,6 @@
     }
 
     .right-layout {
-        width: 100%;
+        margin: 0 8px;
     }
 }

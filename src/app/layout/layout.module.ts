@@ -5,6 +5,11 @@ import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterComponent } from './footer/footer.component';
 import { RouterModule } from '@angular/router';
+import {
+  FaIconLibrary,
+  FontAwesomeModule,
+} from '@fortawesome/angular-fontawesome';
+import { fontAwesomeIcons } from '../core/config/font-awesome-icons';
 
 @NgModule({
   declarations: [
@@ -13,6 +18,10 @@ import { RouterModule } from '@angular/router';
     SidebarComponent,
     FooterComponent,
   ],
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, FontAwesomeModule],
 })
-export class LayoutModule {}
+export class LayoutModule {
+  constructor(iconLibrary: FaIconLibrary) {
+    iconLibrary.addIcons(...fontAwesomeIcons);
+  }
+}

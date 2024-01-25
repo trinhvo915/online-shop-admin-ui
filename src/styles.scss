@@ -1,14 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 $leftWith: 250px;
-$heightHeader: 80px;
+$heightHeader: 70px;
 $heightFooter: 20px;
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
 body {
+    min-height: 100vh;
     font-family: 'Poppins', sans-serif;
+    background-color: #f3f3f7;
 }

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -20,6 +20,7 @@ import { CategoryComponent } from './pages/category/category.component';
     CategoryComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, LayoutModule],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [LayoutModule],
   bootstrap: [AppComponent],
 })
