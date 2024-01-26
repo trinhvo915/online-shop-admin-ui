@@ -1,11 +1,11 @@
 @import './../../../styles.scss';
 
 .header {
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: $heightHeader;
+    width: 100%;
     background-color: #ffffff;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -22,6 +22,11 @@
 
         .bars__icon {
             display: none;
+            cursor: pointer;
+
+            &.close__bars__icon {
+                display: block;
+            }
         }
 
         @media only screen and (max-width: 768px) {
@@ -31,7 +36,7 @@
         }
     }
 
-    .rigth__header {
+    .right__header {
         width: 50%;
         height: 100%;
         display: flex;

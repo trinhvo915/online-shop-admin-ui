@@ -1,10 +1,15 @@
-import { Component } from '@angular/core';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  @Input() isOpenSidebar: boolean = false;
+  @Output() closeSidebar = new EventEmitter<null>();
+
+  onCloseSidebar() {
+    this.closeSidebar.emit();
+  }
+}

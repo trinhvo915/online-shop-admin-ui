@@ -1,8 +1,8 @@
 <div class="header">
     <div class="left__header">
-        <fa-icon icon="bars" class="bars__icon" [styles]="{height: '30px', width: '30px'}"></fa-icon>
+        <fa-icon (click)="onCloseSidebar()" icon="bars" class="bars__icon" [ngClass]="{'close__bars__icon': !isOpenSidebar}" [styles]="{height: '30px', width: '30px'}"></fa-icon>
     </div>
-    <div class="rigth__header">
+    <div class="right__header">
         <fa-icon icon="bell" class="bell__icon" [styles]="{height: '30px', width: '30px'}"></fa-icon>
         <img class="header__avatar" src="./../../../assets/images/avatar.png" alt="avatar">
     </div>

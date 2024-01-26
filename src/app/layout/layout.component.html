@@ -1,9 +1,10 @@
 <div class="container">
-    <div class="left__layout">
-        <app-sidebar></app-sidebar>
+    <div class="left__layout" [ngClass]="{'close__left__sidebar': !isOpenSidebar}">
+        <app-sidebar (closeSidebar)="onShowHideSidebar()" [isOpenSidebar] = 'isOpenSidebar'></app-sidebar>
     </div>
-    <div class="right__layout">
-        <app-header></app-header>
+    
+    <div class="right__layout" [ngClass]="{'close__sidebar': !isOpenSidebar}">
+        <app-header (closeSidebar)="onShowHideSidebar()" [isOpenSidebar] = 'isOpenSidebar'></app-header>
         <div class="content">
             <router-outlet></router-outlet>
         </div>
