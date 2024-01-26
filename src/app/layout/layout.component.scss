@@ -5,13 +5,13 @@
     height: 100vh;
 }
 
-.left-layout {
+.left__layout {
     height: 100%;
     width: $leftWith;
     background-color: #ffffff;
 }
 
-.right-layout {
+.right__layout {
     flex: 1;
     height: 100%;
     display: flex;
@@ -24,11 +24,11 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .left-layout {
+    .left__layout {
         display: none;
     }
 
-    .right-layout {
+    .right__layout {
         margin: 0 8px;
     }
 }
