@@ -15,7 +15,6 @@
     top: 0;
     left: 0;
     bottom: 0;
-    transition: right 1s ease-out;
     transition: 1s ease-out;
 
     &.close__left__sidebar {
@@ -38,12 +37,34 @@
 
 .content {
     width: 100%;
-    height: calc(100% - $heightHeader + $heightFooter);
+    height: calc(100% - ($heightHeader + $heightFooter));
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 1281px) {
+    .left__layout {
+        width: $leftWithTablet;
+        left: 0;
+
+        &.close__left__sidebar {
+            left: -$leftWithTablet;
+        }
+    }
+
+    .right__layout {
+        margin-left: calc($leftWithTablet + 15px);
+
+        &.close__sidebar {
+            margin: 0 8px;
+        }
+    }
 }
 
 @media only screen and (max-width: 768px) {
     .left__layout {
-        left: -$leftWith;
+        left: -$leftWithTablet;
+
         &.close__left__sidebar {
             left: 0;
         }
@@ -53,3 +74,4 @@
         margin: 0 8px;
     }
 }
+
