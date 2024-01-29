@@ -28,9 +28,10 @@
         width: 20px;
         height: 20px;
         font-size: large;
-        right: 15px;
-        top: 15px;
+        left: calc($leftWith - 30px) ;
+        top: 10px;
         cursor: pointer;
+        transition: 1s ease-out;
     }
 }
 
@@ -55,11 +56,7 @@
         }
 
         .arrow__left {
-            width: 20px;
-            height: 20px;
-            font-size: large;
-            right: 10px;
-            top: 10px;
+            left: calc($leftWithTablet - 30px);
         }
     }
 }
