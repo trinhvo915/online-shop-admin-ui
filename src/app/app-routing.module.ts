@@ -6,6 +6,7 @@ import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { LayoutComponent } from './layout/layout.component';
 import { AnalyticsComponent } from './pages/analytics/analytics.component';
 import { CategoryComponent } from './pages/category/category.component';
+import { EcommerceComponent } from './pages/ecommerce/ecommerce.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,10 @@ const routes: Routes = [
       {
         path: 'category',
         component: CategoryComponent,
+      },
+      {
+        path: 'ecommerce',
+        component: EcommerceComponent,
       },
     ],
   },

@@ -10,7 +10,7 @@ import {
   FontAwesomeModule,
 } from '@fortawesome/angular-fontawesome';
 import { fontAwesomeIcons } from '../core/config/font-awesome-icons';
-
+import { NzIconModule } from 'ng-zorro-antd/icon';
 @NgModule({
   declarations: [
     LayoutComponent,
@@ -18,7 +18,7 @@ import { fontAwesomeIcons } from '../core/config/font-awesome-icons';
     SidebarComponent,
     FooterComponent,
   ],
-  imports: [CommonModule, RouterModule, FontAwesomeModule],
+  imports: [CommonModule, RouterModule, FontAwesomeModule, NzIconModule],
 })
 export class LayoutModule {
   constructor(iconLibrary: FaIconLibrary) {

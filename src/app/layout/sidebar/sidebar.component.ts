@@ -6,6 +6,24 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrl: './sidebar.component.scss',
 })
 export class SidebarComponent {
+  menu = [
+    {
+      routerLink: '',
+      icon: 'home',
+      text: 'Dashboard',
+    },
+    {
+      routerLink: 'ecommerce',
+      icon: 'shopping-cart',
+      text: 'eCommerce',
+    },
+    {
+      routerLink: 'category',
+      icon: 'security-scan',
+      text: 'Role & Permissions',
+    },
+  ];
+
   @Input() isOpenSidebar: boolean = false;
 
   @Output() closeSidebar = new EventEmitter<null>();

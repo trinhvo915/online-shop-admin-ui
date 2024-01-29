@@ -5,6 +5,15 @@
 </div>
 
 <div class="sidebar__menu">
-
+    <ul class="menu__list">
+        <ng-container *ngFor="let item of menu">
+            <a [routerLink]="item.routerLink">
+                <li class="menu__list__item">
+                    <span class="icon__menu" nz-icon nzType="{{item.icon}}" nzTheme="outline"></span>
+                    <span class="text__menu">{{item.text}}</span>
+                </li>
+            </a>
+        </ng-container>
+    </ul>
 </div>
 

@@ -17,6 +17,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NzTabsModule } from 'ng-zorro-antd/tabs';
+import { EcommerceComponent } from './pages/ecommerce/ecommerce.component';
 registerLocaleData(en);
 
 @NgModule({
@@ -27,6 +28,7 @@ registerLocaleData(en);
     ErrorComponent,
     AnalyticsComponent,
     CategoryComponent,
+    EcommerceComponent,
   ],
   imports: [
     BrowserModule, 
