@@ -1,0 +1,8 @@
+export enum EHttpStatusCode {
+  SUCCESS = 200,
+  BAD_REQUEST = 400,
+  INTERNAL_SEVER_ERROR = 500,
+  UNAUTHORIZED = 401,
+  FORBIDDEN = 403,
+  NOT_FOUND = 404,
+}

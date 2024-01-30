@@ -22,11 +22,18 @@ export class SidebarComponent {
       icon: 'security-scan',
       text: 'Role & Permissions',
     },
+    {
+      routerLink: 'ecommerce',
+      icon: 'user-add',
+      text: 'Users',
+    },
   ];
 
-  @Input() isOpenSidebar: boolean = false;
+  @Input()
+  isOpenSidebar: boolean = false;
 
-  @Output() closeSidebar = new EventEmitter<null>();
+  @Output()
+  closeSidebar = new EventEmitter<null>();
 
   onCloseSidebar() {
     this.closeSidebar.emit();
